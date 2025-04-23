@@ -18,37 +18,40 @@ interface CarouselImage {
 
 export function HeroSection(): React.JSX.Element {
   return (
-    // Main carousel wrapper 
-    <Carousel className="relative" >
-      {/* Container for carousel items with overflow control */}
-      <CarouselContent className="">
-        {/* Map through carousel images array to create slides */}
+    // Main carousel wrapper with -mt-[X] to remove gap
+    <Carousel className="relative -mt-[24px]" >
+      {/* Container for carousel items */}
+      <CarouselContent>
         {carouselImages.map((item: CarouselImage, index: number) => (
           <CarouselItem 
             key={`carousel-item-${index}`} 
             className="w-full">
-            {/* Card component for each carousel item */}
             <Card className="rounded-none border-none">
-              {/* Content wrapper */}
-              <CardContent className="flex lg:h-[80vh] md:h-88 items-center justify-center p-0">
-                <Image
-                  className="w-full h-full object-cover"
-                  src={item.imageUrl}
-                  alt={item.altText || `Carousel image ${index + 1}`}
-                  width={1920}
-                  height={1080}
-                  priority={true} 
-                  quality={90} 
-                />
+              <CardContent className="flex h-screen max-h-[90vh] items-center justify-center p-0">
+                <div className="relative w-full h-full">
+                  <Image
+                    className="w-full h-full object-cover"
+                    src={item.imageUrl}
+                    alt={item.altText || `Carousel image ${index + 1}`}
+                    width={1920}
+                    height={1080}
+                    priority={true} 
+                    quality={90}
+                    sizes="100vw"
+                    style={{
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }}
+                  />
+                </div>
               </CardContent>
             </Card>
           </CarouselItem>
         ))}
       </CarouselContent>
 
-      {/* Navigation buttons for the carousel */}
-      <CarouselPrevious className="left-4" aria-label="Previous slide" />
-      <CarouselNext className="right-4" aria-label="Next slide" />
+      <CarouselPrevious className="left-4 z-10" aria-label="Previous slide" />
+      <CarouselNext className="right-4 z-10" aria-label="Next slide" />
     </Carousel>
   );
 }
