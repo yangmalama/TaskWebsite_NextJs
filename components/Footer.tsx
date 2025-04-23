@@ -103,7 +103,7 @@ export default function Footer() {
         {/* Company Description */}
         <div className="col-span-1">
           <p className="text-sm leading-relaxed">
-            "As action speaks louder than words."We SOFTY HYGIENE PVT.LTD. is one of the largest private level manufacturing company of disposable wet wipes, Baby wipes ,Baby Diaper, Sanitary Napkins and Tissue paper. We ensure feminine care and baby care for their safety and comfort. So, we specially manufacture our product in women and Baby base.
+          &quot;As action speaks louder than words.&quot;We SOFTY HYGIENE PVT.LTD. is one of the largest private level manufacturing company of disposable wet wipes, Baby wipes ,Baby Diaper, Sanitary Napkins and Tissue paper. We ensure feminine care and baby care for their safety and comfort. So, we specially manufacture our product in women and Baby base.
           </p>
         </div>
       </div>

@@ -2,10 +2,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaFacebook, FaWhatsapp } from 'react-icons/fa'
-import { FaLocationDot } from 'react-icons/fa6'
-import { AiFillInstagram } from 'react-icons/ai'
-import { BsMessenger } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoMdClose } from 'react-icons/io'
 

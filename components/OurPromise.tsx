@@ -1,28 +1,6 @@
 import React from 'react'
 
 export default function OurPromise() {
-  const products = [
-    {
-      title: 'Premium Sanitary Napkins',
-      bgColor: 'bg-pink-50',
-      imageUrl: '/sanitary-napkins.png'
-    },
-    {
-      title: 'Ultra-Soft Baby Diapers',
-      bgColor: 'bg-blue-50',
-      imageUrl: '/baby-diapers.png'
-    },
-    {
-      title: 'Gentle Wet Wipes',
-      bgColor: 'bg-green-50',
-      imageUrl: '/wet-wipes.png'
-    },
-    {
-      title: 'Soft Tissue Papers',
-      bgColor: 'bg-yellow-50',
-      imageUrl: '/tissue-papers.png'
-    }
-  ];
 
   const promises = [
     'Dermatologically tested for sensitive skin',
