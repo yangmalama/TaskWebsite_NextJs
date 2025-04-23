@@ -5,9 +5,6 @@
 TaskWebsite_NextJs is an innovative e-commerce web application built with Next.js. It is a clone website: https://www.softy.com.np/ for educational purpose.
 
 ## 🌟 Key Features
-
-- **Dynamic Task Creation**: Easily add, edit, and manage tasks
-- **Category Management**: Organize tasks into custom categories
 - **Responsive Design**: Seamless experience across all devices
 - **User-Friendly Interface**: Intuitive and clean UI
 
