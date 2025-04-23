@@ -7,17 +7,17 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <div className="px-4 sm:px-6 lg:px-8">
       {/* Banner Image at top */}
       <Banner />
 
-      {/* about us  */}
+      {/* About us */}
       <div className="text-center mt-8">
-        <div className="inline-block px-8 py-2 text-white text-xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 rounded-full shadow-md">
+        <div className="inline-block px-6 py-2 text-white text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 rounded-full shadow-md">
           About Us
         </div>
-        <div className="mt-6 px-4 py-4 bg-pink-50 text-gray-800 rounded-lg shadow-md text-xl w-11/12 mx-auto">
-          <p className="text-justify m-6 ">
+        <div className="mt-6 px-4 py-4 bg-pink-50 text-gray-800 rounded-lg shadow-md text-base sm:text-lg lg:text-xl w-full sm:w-10/12 lg:w-8/12 mx-auto">
+          <p className="text-justify m-4 sm:m-6">
             At Softy Hygiene, we believe that care begins with comfort,
             cleanliness, and trust. As one of Nepal's largest private-label
             manufacturers of personal hygiene products—including baby wipes,
@@ -26,13 +26,14 @@ export default function About() {
           </p>
         </div>
       </div>
-      {/*  Why softy. */}
+
+      {/* Why Softy */}
       <div className="text-center mt-8">
-        <div className="inline-block px-8 py-2 text-white text-xl font-semibold bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md">
-          Why softy.
+        <div className="inline-block px-6 py-2 text-white text-lg sm:text-xl font-semibold bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md">
+          Why Softy
         </div>
-        <div className="mt-6 px-4 py-4 bg-blue-50 text-gray-800 rounded-lg shadow-md text-xl w-11/12 mx-auto">
-          <p className="text-justify m-6 ">
+        <div className="mt-6 px-4 py-4 bg-blue-50 text-gray-800 rounded-lg shadow-md text-base sm:text-lg lg:text-xl w-full sm:w-10/12 lg:w-8/12 mx-auto">
+          <p className="text-justify m-4 sm:m-6">
             At Softy Hygiene, we believe that care begins with comfort,
             cleanliness, and trust. As one of Nepal's largest private-label
             manufacturers of personal hygiene products—including baby wipes,
@@ -41,16 +42,18 @@ export default function About() {
           </p>
         </div>
       </div>
-      {/*  Hear from us. */}
+
+      {/* Hear from us */}
       <HearFrom />
 
+      {/* Product Section */}
       <ProductSection />
-      {/*  Our Process */}
+
+      {/* Our Process */}
       <OurProcess />
-      {/*  Our Promise */}
+
+      {/* Our Promise */}
       <OurPromise />
-      {/*  Footer */}
-      
     </div>
   );
 }

@@ -27,31 +27,31 @@ export default function ProductSection() {
   ];
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="w-11/12 mx-auto">
-              {/* Products section */}
-      <div className="w-full  py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="">
-            {/* Subtitle */}
-            <p className="text-pink-500 font-medium text-lg">Our Products</p>
+        {/* Products section */}
+        <div className="w-full py-16">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <div>
+              {/* Subtitle */}
+              <p className="text-pink-500 font-medium text-lg">Our Products</p>
 
-            {/* Main Title */}
-            <h2 className="text-3xl font-semibold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-              Comprehensive Hygiene Solutions
-            </h2>
+              {/* Main Title */}
+              <h2 className="text-3xl font-semibold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent p-2">
+                Comprehensive Hygiene Solutions
+              </h2>
 
-            {/* Description */}
-            <p className="text-gray-600 text-md max-w-3xl mx-auto">
-              We specialize in manufacturing a wide range of hygiene products
-              designed with care and precision for ultimate comfort and
-              protection.
-            </p>
+              {/* Description */}
+              <p className="text-gray-600 text-md max-w-3xl mx-auto">
+                We specialize in manufacturing a wide range of hygiene products
+                designed with care and precision for ultimate comfort and
+                protection.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
             <div
               key={index}
@@ -66,8 +66,10 @@ export default function ProductSection() {
               <p className="text-gray-600 text-center">
                 {product.description}
               </p>
+              
             </div>
           ))}
+          
         </div>
       </div>
     </div>
