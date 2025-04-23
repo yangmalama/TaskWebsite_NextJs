@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 export default function OurPromise() {
   const products = [
@@ -59,27 +58,6 @@ export default function OurPromise() {
             ))}
           </ul>
         </div>
-
-        {/* Products Grid */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className={`${product.bgColor} rounded-lg p-6 text-center transition-transform hover:scale-105`}
-            >
-              <div className="aspect-square relative mb-4">
-                <Image
-                  src={product.imageUrl}
-                  alt={product.title}
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-              <h3 className="font-medium text-gray-900">{product.title}</h3>
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   )

@@ -21,7 +21,7 @@ export function HeroSection(): React.JSX.Element {
     // Main carousel wrapper 
     <Carousel className="relative" >
       {/* Container for carousel items with overflow control */}
-      <CarouselContent className="overflow-hidden">
+      <CarouselContent className="">
         {/* Map through carousel images array to create slides */}
         {carouselImages.map((item: CarouselImage, index: number) => (
           <CarouselItem 
@@ -37,7 +37,7 @@ export function HeroSection(): React.JSX.Element {
                   alt={item.altText || `Carousel image ${index + 1}`}
                   width={1920}
                   height={1080}
-                  priority={index === 0} 
+                  priority={true} 
                   quality={90} 
                 />
               </CardContent>

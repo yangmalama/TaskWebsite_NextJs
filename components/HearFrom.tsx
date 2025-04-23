@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { FaQuoteLeft } from "react-icons/fa";
 
 export default function HearFrom() {
   return (
@@ -19,7 +20,7 @@ export default function HearFrom() {
           {/* Information Section */}
           <div className="bg-pink-50 p-8 shadow-md text-gray-800 rounded-r-lg text-sm w-full">
           <div className="flex items-center gap-2">
-              <span className="text-pink-400 text-7xl font-serif leading-none">"</span>
+              <span className="text-pink-400 text-7xl font-serif leading-none"><FaQuoteLeft /></span>
               <h2 className="bg-gradient-to-r from-pink-400 to-purple-600 bg-clip-text text-transparent text-xl font-medium tracking-wide">
                 HEAR FROM OUR CHAIRPERSON
               </h2>

@@ -67,7 +67,7 @@ export default function Categories(): React.ReactElement {
           {categoryItems.map((category) => (
             <CarouselItem 
               key={category.id} 
-              className="pl-1 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+              className="pl-1 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
             >
               <div className="p-4 flex items-center justify-center">
                 <Card className="max-w-xs rounded-2xl overflow-hidden group bg-gradient-to-br from-purple-200 to-pink-200 shadow-sm cursor-pointer hover:shadow-lg transition-shadow duration-300">
@@ -104,8 +104,8 @@ export default function Categories(): React.ReactElement {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
+        <CarouselPrevious className="flex scale-75 sm:scale-100 bg-white/50 hover:bg-white/75" />
+        <CarouselNext className="flex scale-75 sm:scale-100 bg-white/50 hover:bg-white/75" />
       </Carousel>
     </section>
   );
